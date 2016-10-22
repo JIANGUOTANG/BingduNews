@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Bingdu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="login_success">login success</string>
+    <string name="login">LOGIN</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="forgot_your_password">Forgot your password ?</string>
+    <string name="go">GO</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="next">NEXT</string>
+    <string name="register">REGISTER</string>
+
+    <string name="ershi">
+955年，学校创建，是新中国成立后广东省较早设置的公办成人高校之一。
+1992 年，学校被授予全国成人高等教育先进单位。
+1970年，广东教育学院复校并改建为肇庆地区师范学校。
+1958年，广东工农师范学院创建。
+1960年，广东工农师范学院并入广东教育行政学院。
+1975年，肇庆地区师范学校升格为肇庆地区五七师范学院。
+1978年，肇庆地区五七师范学院(部分资源)改建(复校)为广东教育学院。
+2010年，广东教育学院升格为广东第二师范学院。
+2003年4月，广东省教育厅批复同意该院创造条件改制为普通本科院校。
+2010年，学校经全国高等学校设置评议委员会五届四次会议的专家评议，批准广东教育学院正式转制为普通本科院校，并更名为“广东第二师范学院”。
+2014年，学校获得本科学位授予权。
+
+    </string>
+    <string name="ershi2">根据2014年6月学校官网显示，学校的科研平台有：教育科学研究所，[4]  科学教育研究所，海外华文文学研究所，应用数学研究所，基础教育研究中心，民办教育研究中心，德育研究中心，心理研究与指导中心，学校管理研究中心，邓小平理论与教育研究中心，老师信息技术研究中心，中华民族凝聚力研究中心，应用生态学实验室。[5]
+学术资源
+图书馆
+截止2014年2月28日，图书馆拥有纸质文献104.76万册，电子图书50万册，中外文报刊918余种。而数字资源建设方面，以引进权威资源为主，自建特色资源为辅，本馆现购进中国知网系统服务平台（中国学术期刊网络出版总库，中国优秀硕士学位论文全文数据库等4个子数据库），超星读秀知识库系统服务平台，国道数据外文专题数据库，人大复印报刊资料数据库等多个文献信息资源库。[6]
+学术期刊
+《广东第二师范学院学报》
+本刊创刊于1981年，是广东教育学院主办的综合性学术理论期刊。1997年成为中国学术期刊(光盘版)的首批入编期刊，2000年成为中国期刊网数据库来源期刊。[7]
+科研成果
+截止到2013年3月，学校已获得和参与国家级社科项目1项，省级社科项目3项；出版海外华文文学专著4部，编著4部。</string>
+</resources>

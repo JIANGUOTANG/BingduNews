@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- Textcolor-->
+    <color name="black_text">#86000000</color>
+    <color name="black_fadetext">#56000000</color>
+    <color name="black_hinttext">#26000000</color>
+    <color name="black_lint">#12000000</color>
+    <color name="white_fadetext">#70ffffff</color>
+    <color name="white_hinttext">#30ffffff</color>
+    <color name="white_lint">#12ffffff</color>
+    <color name="transparent_white">#00FFFFFF</color>
+
+    <color name="greed">#2FA881</color>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jian.bingdu.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_action_name"
+        app:title="并读"
+        app:titleTextColor="#ffffff">
+    </android.support.v7.widget.Toolbar>
+    <fragment
+        android:id="@+id/fragment_news"
+        android:name="com.jian.Fragment.NewsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <fragment
+        android:id="@+id/fragment_ad"
+        android:name="com.jian.Fragment.ADFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <RadioGroup
+        android:id="@+id/main_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <com.jian.View.MyRadioButton
+            android:id="@+id/chioce"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="精选"
+            app:drawableSize="30dp"
+            app:drawableTop="@drawable/select_book" />
+        <com.jian.View.MyRadioButton
+            android:id="@+id/find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="发现"
+            app:drawableSize="30dp"
+            app:drawableTop="@drawable/select_compass" />
+    </RadioGroup>
+</LinearLayout>
