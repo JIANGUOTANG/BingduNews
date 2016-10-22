@@ -13,17 +13,13 @@ public class NewsInfo implements Serializable {
     private String detail;
     private String tab;
     private int type = MyUtil.TYPE_BODY;
-
     public int getType() {
         return type;
     }
-
     public void setType(int type) {
         this.type = type;
     }
-
     private int commentCount;
-
     public NewsInfo(String name, String imgUrl, String detail, String tab, int commentCount, int type) {
         this.name = name;
         this.imgUrl = imgUrl;
@@ -32,7 +28,6 @@ public class NewsInfo implements Serializable {
         this.type = type;
         this.commentCount = commentCount;
     }
-
     public String getName() {
         return name;
     }
