@@ -14,6 +14,8 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.animation.AccelerateInterpolator;
 
+import com.jian.util.VersionUtil;
+
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
@@ -29,7 +31,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         ButterKnife.inject(this);
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ShowEnterAnimation();
         }
@@ -45,7 +46,6 @@ public class RegisterActivity extends AppCompatActivity {
     private void ShowEnterAnimation() {
         Transition transition = TransitionInflater.from(this).inflateTransition(R.transition.fabtransition);
         getWindow().setSharedElementEnterTransition(transition);
-
         transition.addListener(new Transition.TransitionListener() {
             @Override
             public void onTransitionStart(Transition transition) {
@@ -99,24 +99,28 @@ public class RegisterActivity extends AppCompatActivity {
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void animateRevealClose() {
-        Animator mAnimator = ViewAnimationUtils.createCircularReveal(cvAdd,cvAdd.getWidth()/2,0, cvAdd.getHeight(), fab.getWidth() / 2);
-        mAnimator.setDuration(500);
-        mAnimator.setInterpolator(new AccelerateInterpolator());
-        mAnimator.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                cvAdd.setVisibility(View.INVISIBLE);
-                super.onAnimationEnd(animation);
-                fab.setImageResource(R.drawable.plus);
-                RegisterActivity.super.onBackPressed();
-            }
+        if(VersionUtil.isMaterial()) {
+            Animator mAnimator = ViewAnimationUtils.createCircularReveal(cvAdd, cvAdd.getWidth() / 2, 0, cvAdd.getHeight(), fab.getWidth() / 2);
+            mAnimator.setDuration(500);
+            mAnimator.setInterpolator(new AccelerateInterpolator());
+            mAnimator.addListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    cvAdd.setVisibility(View.INVISIBLE);
+                    super.onAnimationEnd(animation);
+                    fab.setImageResource(R.drawable.plus);
+                    RegisterActivity.super.onBackPressed();
+                }
 
-            @Override
-            public void onAnimationStart(Animator animation) {
-                super.onAnimationStart(animation);
-            }
-        });
-        mAnimator.start();
+                @Override
+                public void onAnimationStart(Animator animation) {
+                    super.onAnimationStart(animation);
+                }
+            });
+            mAnimator.start();
+        }else{
+            finish();
+        }
     }
     @Override
     public void onBackPressed() {

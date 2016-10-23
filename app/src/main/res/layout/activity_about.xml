@@ -74,19 +74,6 @@
             android:layout_margin="16dp"
             android:background="@color/black_lint"
             />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="姓名：叶蓓蕾"
-            android:layout_marginLeft="16dp"
-            android:textSize="24sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="16dp"
-            android:text="学号：14551100134"
-            android:textSize="24sp" />
     </LinearLayout>
 </LinearLayout>

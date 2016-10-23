@@ -57,9 +57,10 @@ public class LoginActivity extends AppCompatActivity {
 //
 //                getWindow().setExitTransition(explode);
 //                getWindow().setEnterTransition(explode);
-                ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-                Intent i2 = new Intent(this,LoginSuccessActivity.class);
-                startActivity(i2, oc2.toBundle());
+                    ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+                    Intent i2 = new Intent(this, LoginSuccessActivity.class);
+                    startActivity(i2, oc2.toBundle());
+
                 break;
         }
     }

@@ -1,7 +1,6 @@
 package com.jian.Adapter;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +28,7 @@ public class channalGridAdapter extends RecyclerView.Adapter<channalGridAdapter.
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         ChannalInfo  channalInfo  =channalInfos.get(position);
-        Log.i("jian","1"+channalInfo.getTitle());
+
         holder.image.setImageResource(channalInfo.getImageId());
         holder.title.setText(channalInfo.getTitle());
     }

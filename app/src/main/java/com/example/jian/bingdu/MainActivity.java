@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements FragmetnCallBackL
                 if (menuItemId == R.id.about) {
                     Intent intent = new Intent(MainActivity.this, AboutActivity.class);
                     startActivity(intent);
+                    finish();
                 }
                 return true;
             }
@@ -104,10 +105,6 @@ public class MainActivity extends AppCompatActivity implements FragmetnCallBackL
         radioGroup = (RadioGroup) findViewById(R.id.main_radioGroup);
     }
 
-    @Override
-    public void onBackPressed() {
-
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
